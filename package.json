@@ -1,0 +1,57 @@
+{
+  "name": "admob-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for interacting with AdMob API",
+  "main": "./build/index.js",
+  "type": "module",
+  "bin": {
+    "admob-mcp-server": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js",
+    "auth": "npm run build && node build/index.js auth",
+    "lint": "eslint 'src/**/*.ts'",
+    "lint:fix": "eslint 'src/**/*.ts' --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "fix": "npm run lint:fix && npm run format",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx}\"",
+    "inspect": "npx @modelcontextprotocol/inspector node build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.1",
+    "dotenv": "^17.2.1",
+    "google-auth-library": "^10.2.1",
+    "googleapis": "^155.0.0",
+    "open": "^10.2.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.26.0",
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.17.0",
+    "@types/open": "^6.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.32.0",
+    "@typescript-eslint/parser": "^8.32.0",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.4.0",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.32.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "admob",
+    "mcp",
+    "model-context-protocol",
+    "ai"
+  ],
+  "author": "Taeho Kim <jyte82@gmail.com>",
+  "license": "Apache-2.0"
+}
