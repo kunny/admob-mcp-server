@@ -121,12 +121,10 @@ export function configureTools(server: Server): void {
               dateRangeStart: {
                 type: "string",
                 description: "The start date of the report. Format: YYYY-MM-DD",
-                format: "date",
               },
               dateRangeEnd: {
                 type: "string",
                 description: "The end date of the report. Format: YYYY-MM-DD",
-                format: "date",
               },
               dimensions: {
                 type: "array",
@@ -216,12 +214,10 @@ export function configureTools(server: Server): void {
               dateRangeStart: {
                 type: "string",
                 description: "The start date of the report. Format: YYYY-MM-DD",
-                format: "date",
               },
               dateRangeEnd: {
                 type: "string",
                 description: "The end date of the report. Format: YYYY-MM-DD",
-                format: "date",
               },
               dimensions: {
                 type: "array",
@@ -481,8 +477,6 @@ export function configureTools(server: Server): void {
           reportSpec: reportSpec,
         },
       };
-
-      console.error(`Spec: ${JSON.stringify(reportSpec)}`);
 
       const result =
         name === ToolName.GENERATE_NETWORK_REPORT
