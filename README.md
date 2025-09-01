@@ -120,7 +120,7 @@ Add to your `claude_desktop_config.json`:
 }
 ```
 
-## Usage with Gemini CLI
+### Usage with Gemini CLI
 
 Add to your `~/.gemini/settings.json`:
 
