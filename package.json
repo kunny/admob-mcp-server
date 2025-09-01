@@ -18,7 +18,7 @@
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "fix": "npm run lint:fix && npm run format",
     "format:check": "prettier --check \"src/**/*.{ts,tsx}\"",
-    "inspect": "npx @modelcontextprotocol/inspector node build/index.js"
+    "inspect": "npm run build && npx @modelcontextprotocol/inspector node build/index.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.17.1",

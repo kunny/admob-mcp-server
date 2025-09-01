@@ -18,10 +18,9 @@
 
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-
 import { authorize } from "./auth.js";
-import * as dotenv from "dotenv";
 import { configureTools } from "./tools.js";
+import * as dotenv from "dotenv";
 
 dotenv.config();
 
