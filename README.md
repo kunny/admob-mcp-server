@@ -93,6 +93,8 @@ The server will be running on `stdio`.
 
 The following tools are available:
 
+*   `generate_network_report`: Generates an AdMob Network report based on the provided report specification.
+*   `generate_mediation_report`: Generates an AdMob Mediation report based on the provided report specification.
 *   `get_account`: Gets information about the AdMob publisher account.
 *   `list_ad_units`: Lists the ad units under the AdMob publisher account.
 *   `list_apps`: Lists the apps under the AdMob publisher account.
