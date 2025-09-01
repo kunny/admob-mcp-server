@@ -1,6 +1,6 @@
 # AdMob MCP Server
 
-This is a server that exposes the Google AdMob API as a set of tools for the Model Context Protocol (MCP).
+This is a server that exposes the [Google AdMob API](https://developers.google.com/admob/api) as a set of tools for the Model Context Protocol (MCP).
 
 ## Prerequisites
 
