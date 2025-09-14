@@ -70,7 +70,6 @@ const COMMON_REPORT_DIMENSIONS = [
   Dimension.WEEK,
   Dimension.AD_UNIT,
   Dimension.APP,
-  Dimension.AD_TYPE,
   Dimension.COUNTRY,
   Dimension.FORMAT,
   Dimension.PLATFORM,
