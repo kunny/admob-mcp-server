@@ -89,9 +89,14 @@ npm start
 
 The server will be running on `stdio`.
 
-## Available Tools
+## Capabilities
 
-The following tools are available:
+### Prompts
+
+*  `top_performing_apps_last7d`: List top performing apps in the last 7 days, sorted by estimated earnings.
+*  `top_performing_ad_units_last7d`: Lists top performing ad units with estimated earnings for all mediated networks over the last 7 days, sorted by estimated earnings.
+
+### Tools
 
 *   `generate_network_report`: Generates an AdMob Network report based on the provided report specification.
 *   `generate_mediation_report`: Generates an AdMob Mediation report based on the provided report specification.
@@ -122,7 +127,7 @@ Add to your `claude_desktop_config.json`:
 }
 ```
 
-### Usage with Gemini CLI
+### Gemini CLI
 
 Add to your `~/.gemini/settings.json`:
 

@@ -21,6 +21,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { authorize } from "./auth.js";
 import { configureTools } from "./tools.js";
 import * as dotenv from "dotenv";
+import { configurePrompts } from "./prompts.js";
 
 dotenv.config();
 
@@ -31,11 +32,13 @@ const server = new Server(
   },
   {
     capabilities: {
+      prompts: {},
       tools: {},
     },
   }
 );
 
+configurePrompts(server);
 configureTools(server);
 
 async function main(): Promise<void> {
