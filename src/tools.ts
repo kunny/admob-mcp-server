@@ -107,7 +107,7 @@ const MEDIATION_REPORT_DIMENSIONS = [
 const MEDIATION_REPORT_METRICS = [...COMMON_REPORT_METRICS, Metric.OBSERVED_ECPM];
 
 export function configureTools(server: Server): void {
-  server.setRequestHandler(ListToolsRequestSchema, async () => {
+  server.setRequestHandler(ListToolsRequestSchema, () => {
     return {
       tools: [
         {
