@@ -23,7 +23,10 @@ import { configureTools } from "./tools.js";
 import * as dotenv from "dotenv";
 import { configurePrompts } from "./prompts.js";
 
-dotenv.config();
+if (process.env.DEBUG === "true") {
+  dotenv.config();
+  console.error("Environment variables loaded from .env file");
+}
 
 const server = new Server(
   {
