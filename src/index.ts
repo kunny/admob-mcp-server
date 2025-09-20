@@ -24,7 +24,7 @@ import * as dotenv from "dotenv";
 import { configurePrompts } from "./prompts.js";
 
 if (process.env.DEBUG === "true") {
-  dotenv.config();
+  dotenv.config({ quiet: true });
   console.error("Environment variables loaded from .env file");
 }
 
